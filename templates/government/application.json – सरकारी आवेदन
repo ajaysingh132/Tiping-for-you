@@ -1,0 +1,13 @@
+{
+  "title": "आवेदन पत्र",
+  "fields": [
+    { "id": "name", "label": "आवेदक का नाम", "type": "text", "required": true },
+    { "id": "father", "label": "पिता/पति का नाम", "type": "text", "required": true },
+    { "id": "address", "label": "पता", "type": "textarea", "required": true },
+    { "id": "mobile", "label": "मोबाइल नंबर", "type": "text", "required": false },
+    { "id": "subject", "label": "विषय", "type": "text", "required": true },
+    { "id": "description", "label": "विवरण", "type": "textarea", "required": true },
+    { "id": "attachments", "label": "संलग्नक", "type": "text", "required": false }
+  ],
+  "content": "कार्यालय: _________\nदिनांक: {{date}}\n\n**आवेदन पत्र**\nविषय: {{subject}}\n\nसेवा में,\n_________\n_________\n\nमहोदय/महोदया,\n\nमैं, {{name}}, पुत्र/पुत्री {{father}}, निवासी {{address}}, मोबाइल {{mobile}}, आपके समक्ष निवेदन करता/करती हूँ कि:\n\n{{description}}\n\nअतः आपसे अनुरोध है कि उक्त विषय पर उचित कार्रवाई करने का कष्ट करें।\n\nसंलग्नक: {{attachments}}\n\nदिनांक: {{date}}\n\n                                                    भवदीय,\n                                                    {{name}}\n                                                    (आवेदक)"
+}
