@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBSBFORYOU Official Typing AI (Pro)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1><i class="fas fa-gavel"></i> GBSBFORYOU</h1>
+            <span class="sub"><i class="fas fa-code-branch"></i> Pro v1.0</span>
+        </div>
+
+        <!-- SCREEN 1: SELECTION -->
+        <div id="screen1" class="screen active">
+            <h2><i class="fas fa-chevron-circle-right" style="color:#e67e22;"></i> चरण 1: दस्तावेज़ चुनें</h2>
+            <label>दस्तावेज़ श्रेणी <span class="required">*</span></label>
+            <select id="categorySelect"><option value="">लोड हो रहा...</option></select>
+
+            <label>दस्तावेज़ प्रकार <span class="required">*</span></label>
+            <select id="typeSelect"><option value="">पहले श्रेणी चुनें</option></select>
+
+            <label>भाषा (Language) <span class="required">*</span></label>
+            <select id="langSelect">
+                <option value="hi">हिन्दी</option>
+                <option value="en">English</option>
+                <option value="mr">मराठी</option>
+            </select>
+
+            <button class="btn btn-primary" id="goToFormBtn"><i class="fas fa-arrow-right"></i> आगे बढ़ें</button>
+        </div>
+
+        <!-- SCREEN 2: SMART FORM -->
+        <div id="screen2" class="screen">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h2><i class="fas fa-pen-alt" style="color:#e67e22;"></i> चरण 2: जानकारी भरें</h2>
+                <button class="btn btn-secondary" id="backToScreen1" style="width:auto; padding:8px 18px;"><i class="fas fa-arrow-left"></i> वापस</button>
+            </div>
+            <div id="docInfoBox" style="background:#f8fafc; padding:12px; border-radius:10px; margin:10px 0; border-left:4px solid #1a3c6e;">
+                <i class="fas fa-info-circle"></i> <span id="docTypeDisplay">आवेदन</span> ( <span id="docCatDisplay">सरकारी</span> )
+            </div>
+            <div id="dynamicForm"></div>
+            <button class="btn btn-success" id="generateDocBtn"><i class="fas fa-magic"></i> दस्तावेज़ जनरेट करें</button>
+        </div>
+
+        <!-- SCREEN 3: PREVIEW -->
+        <div id="screen3" class="screen">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h2><i class="fas fa-file-check" style="color:#27ae60;"></i> चरण 3: दस्तावेज़</h2>
+                <button class="btn btn-secondary" id="backToScreen2" style="width:auto; padding:8px 18px;"><i class="fas fa-edit"></i> संपादन</button>
+            </div>
+            <div class="doc-preview" id="docPreview">
+                <div class="placeholder-text"><i class="fas fa-spinner fa-pulse"></i> तैयार हो रहा...</div>
+            </div>
+            <div class="flex-row no-print">
+                <button class="btn btn-primary" id="printBtn"><i class="fas fa-print"></i> प्रिंट / PDF</button>
+                <button class="btn btn-success" id="downloadDocBtn"><i class="fas fa-file-word"></i> DOCX</button>
+            </div>
+            <button class="btn btn-outline" id="newDocBtn" style="margin-top:10px;"><i class="fas fa-plus-circle"></i> नया दस्तावेज़</button>
+        </div>
+
+        <div class="footer">Powered by <span>GBSBFORYOU</span> AI · Modular Architecture</div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
