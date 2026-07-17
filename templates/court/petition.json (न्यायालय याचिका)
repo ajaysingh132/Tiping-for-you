@@ -1,0 +1,11 @@
+{
+  "title": "याचिका (Petition)",
+  "fields": [
+    { "id": "petitioner", "label": "याचिकाकर्ता का नाम", "type": "text", "required": true },
+    { "id": "respondent", "label": "प्रतिवादी का नाम", "type": "text", "required": true },
+    { "id": "case_no", "label": "वाद संख्या (Case No.)", "type": "text", "required": false },
+    { "id": "subject", "label": "विषय", "type": "text", "required": true },
+    { "id": "description", "label": "तथ्य एवं आधार", "type": "textarea", "required": true }
+  ],
+  "content": "**IN THE COURT OF _________ /** **_____________ न्यायालय**\nCase No.: {{case_no}}\n\n**याचिका (Petition)**\n\nयाचिकाकर्ता/प्रार्थी : {{petitioner}}\nप्रतिवादी : {{respondent}}\n\n**विषय:** {{subject}}\n\n**तथ्य एवं आधार:**\n{{description}}\n\n**प्रार्थना:**\nअतः निवेदन है कि न्यायालय उक्त आवेदन को स्वीकार करते हुए उचित आदेश पारित करें।\n\n**सत्यापन:**\nमैं, {{petitioner}}, उपरोक्त याचिकाकर्ता, सत्यापित करता/करती हूँ कि इस आवेदन की विषय-वस्तु मेरी जानकारी एवं विश्वास के अनुसार सही है।\n\nदिनांक: {{date}}\n\n                                                    ({{petitioner}})\n                                                    याचिकाकर्ता"
+}
