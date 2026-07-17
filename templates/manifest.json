@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "id": "court",
+      "label": "न्यायालय / Court",
+      "templates": [
+        { "id": "petition", "label": "याचिका (Petition)" }
+      ]
+    },
+    {
+      "id": "government",
+      "label": "सरकारी / Government",
+      "templates": [
+        { "id": "application", "label": "आवेदन (Application)" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "याचिका (Petition)",
+  "fields": [
+    { "id": "petitioner", "label": "याचिकाकर्ता का नाम", "type": "text", "required": true },
+    { "id": "respondent", "label": "प्रतिवादी का नाम", "type": "text", "required": true },
+    { "id": "case_no", "label": "वाद संख्या (Case No.)", "type": "text", "required": false },
+    { "id": "subject", "label": "विषय", "type": "text", "required": true },
+    { "id": "description", "label": "तथ्य एवं आधार", "type": "textarea", "required": true }
+  ],
+  "content": "**IN THE COURT OF _________ / ____________ न्यायालय**\nCase No.: {{case_no}}\n\n**याचिका (Petition)**\n\nयाचिकाकर्ता: {{petitioner}}\nप्रतिवादी: {{respondent}}\n\nविषय: {{subject}}\n\nतथ्य एवं आधार:\n{{description}}\n\nदिनांक: {{date}}"
+}
