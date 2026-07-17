@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "id": "government",
+      "label": "🏛️ सरकारी (Government)",
+      "templates": [
+        { "id": "application", "label": "आवेदन पत्र" },
+        { "id": "rti", "label": "RTI आवेदन" },
+        { "id": "complaint", "label": "शिकायत पत्र" }
+      ]
+    },
+    {
+      "id": "court",
+      "label": "⚖️ न्यायालय (Court)",
+      "templates": [
+        { "id": "petition", "label": "याचिका (Petition)" },
+        { "id": "legal_notice", "label": "कानूनी नोटिस" },
+        { "id": "affidavit", "label": "शपथ पत्र (Affidavit)" }
+      ]
+    },
+    {
+      "id": "business",
+      "label": "💼 व्यवसाय (Business)",
+      "templates": [
+        { "id": "quotation", "label": "कोटेशन (Quotation)" },
+        { "id": "invoice", "label": "इनवॉइस (Invoice)" }
+      ]
+    },
+    {
+      "id": "personal",
+      "label": "✉️ व्यक्तिगत (Personal)",
+      "templates": [
+        { "id": "leave", "label": "अवकाश आवेदन" },
+        { "id": "permission", "label": "अनुमति पत्र" }
+      ]
+    }
+  ]
+}
